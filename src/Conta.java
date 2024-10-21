@@ -46,9 +46,9 @@ public class Conta {
     @Override
     public String toString() {
         return "Titular: " + cliente.getNome() +
-               "\nAgência: " + agencia +
-               "\nNúmero: " + numero +
-               "\nSaldo: " + saldo;
+               " Agência: " + agencia +
+               " Número: " + numero +
+               " Saldo: " + saldo;
     }
 
     public void transferir(double valor, Conta contaDestino) {

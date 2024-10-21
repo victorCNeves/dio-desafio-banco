@@ -4,6 +4,6 @@ public class ContaCorrente extends Conta{
     }
 
     public String extrato(){
-        return "Extrato da Conta Corrente:"+ super.toString();
+        return "Extrato da Conta Corrente:\n"+ super.toString();
     }
 }

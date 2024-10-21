@@ -25,6 +25,6 @@ public class Banco {
     @Override
     public String toString() {
         return "Banco " + this.nome +
-                "\nContas: " + contas;
+                "\nContas: " + this.contas;
     }
 }
