@@ -4,25 +4,27 @@ import java.util.List;
 public class Banco {
     private String nome;
     private List<Conta> contas;
-
-    public List<Conta> getContas() {
-        return contas;
-    }
-
+    
     public Banco(String nome) {
         this.nome = nome;
         this.contas = new ArrayList<Conta>();
     }
+    public List<Conta> getContas() {
+        return contas;
+    }
 
-    public void addConta(Conta conta){
+    public String getNome() {
+        return nome;
+    }
+
+
+    public void addConta(Conta conta) {
         this.contas.add(conta);
     }
 
     @Override
     public String toString() {
-        return "Banco{" +
-                "nome='" + nome + '\'' +
-                ", contas=" + contas +
-                '}';
+        return "Banco " + this.nome +
+                "\nContas: " + contas;
     }
 }
